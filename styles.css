@@ -1,0 +1,838 @@
+
+/* Estilos para el menú principal */
+#menu_principal ul {
+    width: 100%;
+    list-style: none;
+    opacity: .8;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+#menu_principal ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative; /* Necesario para las líneas en hover */
+}
+
+#menu_principal ul li p {
+    display: inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 10px 10px;
+    line-height: 1em;
+}
+#menu_principal  p {
+   font-size: 20px;
+   font-family: 'IFC-RAILROAD';
+}
+
+#menu_principal ul li a {
+    font-family: 'Aquire-BW0oX';
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+#menu_principal ul:hover {
+    opacity: 1;
+}
+
+#menu_principal ul li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px; /* Ajusta la posición de la línea */
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #ffffff; /* Color de la línea */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+#menu_principal ul li a:hover::after {
+    transform: scaleX(1); /* Expande la línea en el hover */
+    transform-origin: left;
+}
+
+#menu_principal ul li a:hover {
+    color: #000000;
+    font-size: 25px;
+    box-shadow: 20px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Estilos para la nueva sección debajo del menú principal */
+.text-section {
+    background-image: url('media/Inicio1.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    width: 100%;
+    height: 400px; /* Altura de la sección */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para el contenido de texto */
+.text-content p {
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    border-radius: 10px; /* Bordes redondeados para el fondo del texto */
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Estilos para la sección personalizada */
+.custom-section {
+    background-image: url('media/fondoo.png'); /* Imagen de fondo para toda la sección */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Espaciado alrededor de la sección */
+    width: 100%;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Espacio entre los bloques de contenido */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-block p {
+    width: 50%;
+    font-size: 23px;
+    text-align: center;
+    color: #fff; /* Color del texto */
+}
+
+.content-block img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.content-block-reverse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Espacio entre los bloques de contenido */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.content-block-reverse p {
+    font-size: 25px;
+    color: #fff; /* Color del texto */
+}
+
+.content-block-reverse img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+
+}
+#tit{
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+ .separacion{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+ }
+ /*-------------------------------------------------------------------*/
+ .image-text-image-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente las imágenes y el texto */
+    justify-content: space-between; /* Espacio entre las imágenes y el texto */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+}
+
+.image-text-image-section img {
+    width: 30%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.text-container {
+    width: 40%; /* Ajusta el ancho del contenedor del texto */
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 38px;
+    color: #ffffff; /* Color del texto */
+    margin: 0;
+}
+/*  Redes-------------------------------------------------------------------------------*/
+.text-social-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los íconos y el texto */
+    justify-content: space-between; /* Espacio entre los íconos y el texto */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f4f4; /* Fondo opcional para la sección */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los íconos */
+    justify-content: left; /* Centra los íconos horizontalmente */
+    width: 50%; /* Ajusta el ancho del contenedor de íconos */
+}
+
+.social-icon img {
+    width: 120px; /* Ajusta el tamaño de los íconos */
+    height: auto;
+    margin: 0 10px; /* Espacio entre los íconos */
+}
+
+.text-containerr {
+    width: 50%; /* Ajusta el ancho del contenedor de texto */
+    text-align: center; /* Alinea el texto a la derecha */
+}
+
+.text-containerr p {
+    font-size: 20px;
+    color: #333; /* Color del texto */
+    margin: 0;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Estilos para la nueva sección EVENTO */
+.text-art {
+    background-image: url('media/Artistas.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    width: 100%;
+    height: 400px; /* Altura de la sección */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para el contenido de texto */
+.text-art p h1{
+    font-size: 20px; /* Tamaño del texto */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados para el fondo del texto */
+}
+.text-art-d{
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.text-art p{
+    background-color:  rgba(0, 0, 0, 0.3);
+
+}
+/*--------------------------------Artistas--------------------------------------------------------------*/
+.imagen-idea {
+    background-image: url('media/fondoo.png'); /* Ruta de la imagen de fondo */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding-top: 100px; /* Desplaza las imágenes hacia abajo */
+    padding-bottom: 100px;
+}
+
+.imagen-idea table {
+    border-spacing: 10px; /* Espacio entre las celdas de la tabla */
+}
+
+.imagen-idea img {
+    width: 90%; /* Aumenta el tamaño de las imágenes */
+    margin: 5px; /* Pequeño margen entre las imágenes */
+}
+
+table {
+    margin: 0 auto; /* Centra la tabla en la página */
+}
+
+td {
+    text-align: center; /* Centra las imágenes dentro de las celdas */
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+.boton {
+    padding: 20px 40px; /* Aumenta el tamaño del botón */
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    display: block; /* Asegura que el botón se comporte como un bloque */
+    text-align: center; /* Centra el texto dentro del botón */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    color: #ffffff; /* Color del texto del botón */
+    font-weight: bold;
+    background-color: rgba(142, 142, 142, 0.5); /* Fondo semitransparente para el texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-family:'Times New Roman', Times, serif;
+}
+
+.boton:hover {
+    background-color: #ffffff; /* Color de fondo al pasar el mouse */
+    color: #000000; /* Cambia el color del texto al pasar el mouse */
+}
+.boton-link {
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Estilos para la nueva sección LUGAR */
+.text-lugar {
+    background-image: url('media/lugar1.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    width: 100%;
+    height: 400px; /* Altura de la sección */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para el contenido de texto */
+.text-lugar p h1{
+    font-size: 20px; /* Tamaño del texto */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados para el fondo del texto */
+}
+.text-lugar p {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente para el texto */
+}
+.text-lugar-d{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aplicar el fondo a todo el contenedor */
+.fondo-principal {
+    background-image: url('media/fondoo.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el fondo cubra al menos toda la altura de la ventana de visualización */
+    padding-top: 20px; /* Espacio superior opcional */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+    padding-top: 10px;
+}
+
+
+.imagen-ideaa table {
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-ideaa td {
+    padding: 5px;
+}
+
+.img1 {
+    width: 400px; /* Cambia el tamaño según lo que necesites */
+    height: auto;
+}
+
+.img2 {
+    width: 390px; /* Cambia el tamaño según lo que necesites */
+    height: auto;
+}
+
+.img3 {
+    width: 380px; /* Cambia el tamaño según lo que necesites */
+    height: auto;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+#textoo {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 40px; /* Espacio debajo del título */
+}
+
+#textoo h1 {
+    font-size: 30px; /* Tamaño de la fuente del título */
+    color: #fff;
+}
+
+#imagenes {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+#imagenes-contenedor {
+    display: flex;
+    flex-direction: row; /* Alinea las imágenes en una fila */
+    align-items: flex-start; /* Alinea las imágenes en la parte superior */
+}
+
+#imagenuno {
+    width: 40%; /* Ancho de la imagen 1 */
+    margin-right: 10px; /* Espacio entre la imagen 1 y las imágenes 2 y 3 */
+}
+
+#imagenuno img {
+    width: 100%; /* Ajusta el tamaño de la imagen dentro del contenedor */
+    height: auto;
+    object-fit: cover;
+}
+
+#imagenes-verticales {
+    display: flex;
+    flex-direction: column; /* Apila las imágenes 2 y 3 verticalmente */
+}
+
+#imagendos, #imagentres {
+    width: 100%; /* Ancho de las imágenes 2 y 3 */
+}
+
+#imagendos img, #imagentres img {
+    width: 66%; /* Ajusta el tamaño de las imágenes dentro de sus contenedores */
+    height: auto;
+}
+.fondo{
+        background-color: #000000; /* Cambia el color según sea necesario */
+        padding: 20px; /* Espacio interno para que el contenido no quede pegado al borde */
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*Hoteles----------------------------------------*/
+.hoteles {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.hotel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.hotel-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.image-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.img {
+    width: 260px; /* Tamaño reducido */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    background-color: #aaaaaa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #676767;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Estilos para la nueva sección EVENTO */
+.text-acceso {
+    background-image: url('media/Acesso.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    width: 70%;
+    height: 400px; /* Altura de la sección */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo para la sección del título y botón */
+#seccion-titulo-boton {
+    background-image: url('media/fondoo.png'); /* Ruta de la imagen de fondo */
+    padding: 20px;
+    color: #fff;
+    background-color: #727272;
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 40px; /* Espacio debajo de la sección */
+}
+
+#titulo {
+    font-size: 36px; /* Tamaño del título */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#boton {
+    padding: 10px 20px; /* Tamaño del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+    border: none; /* Quita el borde del botón */
+    background-color: #b7b7b7; /* Color de fondo del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    color: #ffffff; /* Color del texto del botón */
+    font-weight: bold;
+    background-color: rgba(142, 142, 142, 0.5); /* Fondo semitransparente para el texto */
+  
+}
+
+#boton:hover {
+    background-color: #727272; /* Color de fondo del botón en hover */
+}
+
+/* Estilo para la sección de contenido */
+#seccion-contenido {
+   
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espacio interno en la sección */
+}
+
+.contenido-imagen {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.contenido-imagen img {
+    width: 80%; /* Ajusta el tamaño de las imágenes dentro del contenedor */
+    max-width: 600px; /* Tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre las imágenes y el texto */
+}
+
+.contenido-imagen p {
+    font-size: 20px; /* Tamaño de la fuente del texto */
+    line-height: 1.5; /* Espaciado entre líneas del texto */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+/* Estilo para el título en pantallas pequeñas */
+.mobile-title {
+    display: none; /* Ocultar por defecto */
+}
+
+/*RESPONSIVE--------------------------------------------------------------------*/
+
+
+/* Ocultar opciones de menú en tablets y móviles */
+/* Estilos para pantallas pequeñas */
+/* Estilos generales para el menú */
+#menu_principal ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_principal ul li {
+    margin: 0 10px;
+}
+
+/* Ocultar el menú hamburguesa y mostrar las opciones por defecto */
+#menu_principal ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_principal ul li {
+    margin: 0 15px;
+}
+
+/* Ocultar el menú hamburguesa en pantallas grandes */
+#menu_toggle {
+    display: none;
+}
+
+#desplegar_menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+/* Estilos para pantallas pequeñas */
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+/*INICIOO-------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    /* Estilo para el ícono del menú hamburguesa */
+    #menu_principal ul {
+        display: none; /* Ocultar el menú por defecto */
+        position: absolute; /* Posicionar el menú sobre el contenido */
+        top: 50px; /* Ajusta este valor según la altura del ícono del menú */
+        left: 0;
+        width: 100%; /* Asegura que el menú ocupe el ancho completo */
+        background-color: white; /* Fondo para el menú */
+        z-index: 1; /* Asegura que el menú esté encima del contenido */
+        flex-direction: column; /* Apilar los elementos del menú verticalmente */
+        padding: 10px; /* Espaciado interno */
+        opacity: 1;
+    }
+
+    /* Estilo para el ícono del menú hamburguesa */
+    #desplegar_menu {
+        display: block; /* Mostrar el ícono hamburguesa */
+        cursor: pointer;
+        font-size: 40px; /* Tamaño grande del ícono */
+        line-height: 1;
+        padding: 10px;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    #menu_toggle:checked + #desplegar_menu + ul {
+        display: flex; /* Mostrar el menú cuando el checkbox está marcado */
+    }
+
+    /* Ocultar el primer párrafo en pantallas pequeñas */
+    .text-content p {
+        display: none; /* Oculta el primer párrafo */
+    }
+
+    /* Mostrar el título en pantallas pequeñas */
+    .mobile-title {
+        display: block; /* Mostrar en pantallas pequeñas */
+        font-size: 24px; /* Ajusta el tamaño según sea necesario */
+        text-align: center; /* Centrar el texto */
+        margin: 10px 0; /* Espaciado alrededor del título */
+    }
+
+    /* Estilo para los bloques de contenido en pantallas pequeñas */
+    .content-block, .content-block-reverse {
+        flex-direction: column; /* Apilar el contenido verticalmente */
+        margin-bottom: 20px; /* Espaciado entre los bloques */
+    }
+
+    .content-block img, .content-block-reverse img {
+        width: 100%; /* Asegura que la imagen no se desborde */
+        margin-top: 10px; /* Espacio entre el texto y la imagen */
+    }
+
+    .content-block p, .content-block-reverse p {
+        text-align: left; /* Justificar texto a la izquierda */
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .content-block-reverse p {
+        display: none; /* Ocultar el párrafo en el bloque reversible */
+    }
+
+    .content-block-reverse #tit {
+        display: none; /* Ocultar el título en el bloque reversible */
+    }
+
+    .image-text-image-section p {
+        font-size: 20px; /* Ajustar tamaño de fuente para el texto */
+    }
+
+    .text-social-section img {
+        width: 80%; /* Ajustar tamaño de las imágenes de redes sociales */
+    }
+}
+
+/*ARTISTAS-------------------------------------------------------------------------------------------------------*/
+/* Estilos generales */
+aside {
+    display: none; /* Ocultar ambos aside por defecto */
+}
+
+.imagen-idea {
+    display: block; /* Mostrar en pantallas grandes */
+}
+
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .imagen-idea {
+        display: none; /* Ocultar en pantallas pequeñas */
+    }
+
+    .imagen-cel {
+        display: block; /* Mostrar en pantallas pequeñas */
+    }
+
+    .imagen-cel table {
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+        border-collapse: collapse; /* Elimina el espacio entre celdas */
+    }
+
+    .imagen-cel td {
+        width: 50%; /* Dos columnas en pantallas pequeñas */
+        text-align: center; /* Centrar el contenido de las celdas */
+        padding: 5px; /* Espaciado interno de las celdas */
+    }
+
+    .imagen-cel img {
+        max-width: 100%; /* Asegura que la imagen no se desborde */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+
+/*LUGAR-----------------------------------------------------------------------------------*/
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .hoteles {
+        padding: 10px;
+    }
+
+    .hotel-table {
+        display: flex; /* Usa flexbox para una fila en pantallas pequeñas */
+        flex-direction: column; /* Apila los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        border: none; /* Elimina el borde de la tabla */
+    }
+
+    .hotel-table td {
+        display: flex; /* Usa flexbox para centrar el contenido en cada celda */
+        justify-content: center; /* Centra el contenido dentro de la celda */
+        width: 100%; /* Asegura que las celdas ocupen el ancho completo */
+        padding: 10px;
+    }
+
+    .hotel-table img {
+        width: 80%; /* Ajusta el tamaño de la imagen para que no sea demasiado grande */
+        max-width: 300px; /* Establece un ancho máximo para las imágenes */
+    }
+
+    /* Oculta la tabla en modo móvil */
+    .hotel-table {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    }
+
+    .hotel-table td {
+        flex: 1 1 50%; /* Dos columnas en pantallas pequeñas */
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+    }
+    .fondo{
+        display: none;
+    }
+}
+
+
+/*ACCESO--------------------------------------------------------------------------------------------------*/
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+
+
+/* Mostrar .text-acceso-d-cel solo en móviles */
+@media (max-width: 768px) {
+    
+    /* Sección con el título y el botón */
+    #seccion-titulo-boton {
+        text-align: center; /* Centra el texto y el botón */
+        padding: 10px;
+    }
+
+    #titulo {
+        font-size: 24px; /* Ajusta el tamaño del título */
+        margin-bottom: 10px;
+    }
+
+    #boton {
+        margin-top: 10px; /* Espacio arriba del botón */
+        padding: 10px 20px; /* Ajusta el tamaño del botón */
+    }
+
+    /* Sección con las imágenes y texto */
+    #seccion-contenido {
+        display: flex;
+        flex-direction: column; /* Apila el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido-imagen {
+        display: flex;
+        flex-direction: column; /* Apila el contenido verticalmente */
+        align-items: center; /* Centra el contenido */
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido-imagen img {
+        max-width: 100%; /* Asegura que la imagen no se desborde */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio debajo de las imágenes */
+    }
+
+    .contenido-imagen p {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        margin: 10px 0; /* Espacio arriba y abajo del texto */
+        padding: 0 10px; /* Espacio a los lados del texto */
+    }
+
+    /* Oculta la primera imagen en pantallas pequeñas */
+    .contenido-imagen img:first-of-type {
+        display: none;
+    }
+
+}
+/* Ocultar el contenedor .text-acceso-d-cel por defecto */
+.text-acceso-d-cel {
+    display: none; /* Ocultar por defecto */
+}
+
+/* Mostrar .text-acceso-d-cel solo en móviles */
+@media (max-width: 768px) {
+    .text-acceso{
+        display: none;
+    }
+    .text-acceso-d-cel {
+        display: block;
+        background-image: url('tu-imagen-fondo-movil.jpg'); /* Imagen de fondo para móviles */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Añade padding si es necesario */
+    }
+
+    /* Ajusta el tamaño de la imagen dentro del contenedor */
+    .text-acceso-d-cel img {
+        width: 100%; /* Ajusta la imagen al contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Asegura que la imagen no tenga espacio debajo */
+    }
+}
